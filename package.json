@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "push": "pnpm prisma db push",
-    "studio": "npx prisma studio"
+    "studio": "npx prisma studio",
+    "generate": "pnpm prisma generate"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
