@@ -11,13 +11,16 @@ importers:
       '@hono/node-server':
         specifier: ^1.13.0
         version: 1.13.0(hono@4.6.2)
+      '@hono/zod-validator':
+        specifier: ^0.2.2
+        version: 0.2.2(hono@4.6.2)(zod@3.23.8)
       hono:
         specifier: ^4.6.2
         version: 4.6.2
     devDependencies:
       '@types/node':
-        specifier: ^20.11.17
-        version: 20.16.5
+        specifier: ^22.5.5
+        version: 22.5.5
       prisma:
         specifier: ^5.19.1
         version: 5.19.1
@@ -177,6 +180,12 @@ packages:
     peerDependencies:
       hono: ^4
 
+  '@hono/zod-validator@0.2.2':
+    resolution: {integrity: sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.19.1
+
   '@prisma/debug@5.19.1':
     resolution: {integrity: sha512-lAG6A6QnG2AskAukIEucYJZxxcSqKsMK74ZFVfCTOM/7UiyJQi48v6TQ47d6qKG3LbMslqOvnTX25dj/qvclGg==}
 
@@ -192,8 +201,8 @@ packages:
   '@prisma/get-platform@5.19.1':
     resolution: {integrity: sha512-sCeoJ+7yt0UjnR+AXZL7vXlg5eNxaFOwC23h0KvW1YIXUoa7+W2ZcAUhoEQBmJTW4GrFqCuZ8YSP0mkDa4k3Zg==}
 
-  '@types/node@20.16.5':
-    resolution: {integrity: sha512-VwYCweNo3ERajwy0IUlqqcyZ8/A7Zwa9ZP3MnENWcB11AejO+tLy3pu850goUW2FC/IJMdZUfKpX/yxL1gymCA==}
+  '@types/node@22.5.5':
+    resolution: {integrity: sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==}
 
   esbuild@0.23.1:
     resolution: {integrity: sha512-VVNz/9Sa0bs5SELtn3f7qhJCDPCF5oMEl5cO9/SSinpE9hbPVvxbd572HH5AKiP7WD8INO53GgfDDhRjkylHEg==}
@@ -227,6 +236,9 @@ packages:
 
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
 snapshots:
 
@@ -306,6 +318,11 @@ snapshots:
     dependencies:
       hono: 4.6.2
 
+  '@hono/zod-validator@0.2.2(hono@4.6.2)(zod@3.23.8)':
+    dependencies:
+      hono: 4.6.2
+      zod: 3.23.8
+
   '@prisma/debug@5.19.1': {}
 
   '@prisma/engines-version@5.19.1-2.69d742ee20b815d88e17e54db4a2a7a3b30324e3': {}
@@ -327,7 +344,7 @@ snapshots:
     dependencies:
       '@prisma/debug': 5.19.1
 
-  '@types/node@20.16.5':
+  '@types/node@22.5.5':
     dependencies:
       undici-types: 6.19.8
 
@@ -383,3 +400,5 @@ snapshots:
       fsevents: 2.3.3
 
   undici-types@6.19.8: {}
+
+  zod@3.23.8: {}
