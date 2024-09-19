@@ -4,7 +4,8 @@
     "dev": "tsx watch src/index.ts",
     "push": "pnpm prisma db push",
     "studio": "npx prisma studio",
-    "generate": "pnpm prisma generate"
+    "generate": "pnpm prisma generate",
+    "prepare": "husky"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
@@ -14,8 +15,17 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.10.0",
     "@types/node": "^22.5.5",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3",
     "prisma": "^5.19.1",
-    "tsx": "^4.7.1"
+    "tsx": "^4.7.1",
+    "typescript-eslint": "^8.6.0"
   }
 }
