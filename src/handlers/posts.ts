@@ -57,7 +57,7 @@ posts.patch('/update/:id', zValidator('json', schemas.updateSchema), async (c) =
     },
   })
 
-  return c.text(`Post with id: ${id} was updated.`)
+  return c.text(`Post with id: ${id} was updated!`)
 })
 
 posts.delete('delete/:id', async (c) => {
@@ -67,7 +67,7 @@ posts.delete('delete/:id', async (c) => {
     where: { id },
   })
 
-  return c.text(`Post with id: ${id} was deleted successfully.`)
+  return c.text(`Post with id: ${id} was deleted successfully!`)
 })
 
 export default posts
