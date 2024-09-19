@@ -5,7 +5,8 @@
     "push": "pnpm prisma db push",
     "studio": "npx prisma studio",
     "generate": "pnpm prisma generate",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "vitest"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
@@ -26,6 +27,7 @@
     "prettier": "3.3.3",
     "prisma": "^5.19.1",
     "tsx": "^4.7.1",
-    "typescript-eslint": "^8.6.0"
+    "typescript-eslint": "^8.6.0",
+    "vitest": "^2.1.1"
   }
 }
