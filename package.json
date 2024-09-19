@@ -1,14 +1,16 @@
 {
   "name": "honojs-template",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "push": "pnpm prisma db push",
+    "studio": "npx prisma studio"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
     "hono": "^4.6.2"
   },
   "devDependencies": {
-    "@types/node": "^20.11.17",
+    "@types/node": "^22.5.5",
     "prisma": "^5.19.1",
     "tsx": "^4.7.1"
   }
