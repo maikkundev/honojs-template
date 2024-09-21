@@ -9,6 +9,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@hono/eslint-config": "^1.0.1",
     "@hono/node-server": "^1.13.0",
     "@hono/zod-validator": "^0.2.2",
     "@prisma/client": "5.19.1",
