@@ -1,9 +1,9 @@
-import { Hono } from 'hono';
+import { Hono } from 'hono'
 
-import { zValidator } from '@hono/zod-validator';
+import { zValidator } from '@hono/zod-validator'
 
-import { prisma } from '../index';
-import * as schemas from '../schemas/post.schema';
+import { prisma } from '../index'
+import * as schemas from '../schemas/post.schema'
 
 interface CreateOptions {
   title: string
