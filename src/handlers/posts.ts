@@ -3,7 +3,7 @@ import { Hono } from 'hono';
 import { zValidator } from '@hono/zod-validator';
 
 import { prisma } from '../index';
-import * as schemas from '../schemas/post.schema';
+import * as schemas from '../validation/post.schema';
 
 interface CreateOptions {
   title: string;
