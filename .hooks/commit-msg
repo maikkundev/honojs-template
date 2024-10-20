@@ -1,0 +1,1 @@
+deno run -A npm:commitlint --edit ${1}
