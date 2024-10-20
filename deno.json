@@ -1,0 +1,41 @@
+{
+  "tasks": {
+    "dev": "deno run --watch src/index.ts",
+    "push": "deno run -A npm:prisma@latest db push",
+    "studio": "npx prisma studio",
+    "generate": "deno run -A --unstable npm:prisma@latest generate --no-engine",
+    "prepare": "husky",
+    "test": "deno test",
+    "hook": "deno run --allow-read --allow-run --allow-write https://deno.land/x/deno_hooks@0.1.1/mod.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "hono": "npm:hono",
+    "zod": "npm:zod",
+    "@hono/zod-validator": "npm:@hono/zod-validator"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  },
+  "lint": {
+    "rules": {
+      "include": ["recommended"]
+    },
+    "files": {
+      "include": ["**/*.{js,mjs,cjs,ts,tsx}"]
+    }
+  },
+  "fmt": {
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "endOfLine": "lf"
+  },
+  "nodeModulesDir": "auto"
+}
