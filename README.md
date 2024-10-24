@@ -4,12 +4,13 @@
 
 ### Dependencies used
 
+- `Deno 2`: Runtime
 - `Hono`: Web Framework
 - `Prisma`: ORM
 - `zod`: Data validation
-- `Vitest`: Writing tests
-- `Prettier`: Formatting
-- `ESLint`: Linting
-- `commitlint`: Lint commit messages
+- `Deno Test`: Writing tests
+- `Deno fmt`: Formatting
+- `Deno lint`: Linting
+- `commitlint`: Lint commit messages (currently not working :c)
 - `lintstaged`: Lints staged files
-- `husky`: Git hook manager
+- `deno_hooks`: Git hook manager
