@@ -8,8 +8,7 @@
 - `Prisma`: ORM
 - `zod`: Data validation
 - `Vitest`: Writing tests
-- `Prettier`: Formatting
-- `ESLint`: Linting
+- `Biome.js`: Formatting and linting
 - `commitlint`: Lint commit messages
 - `lintstaged`: Lints staged files
 - `husky`: Git hook manager
