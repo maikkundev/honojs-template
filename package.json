@@ -1,5 +1,6 @@
 {
   "name": "honojs-template",
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "push": "pnpm prisma db push",
