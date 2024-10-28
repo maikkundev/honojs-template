@@ -15,8 +15,8 @@ importers:
         specifier: 0.4.1
         version: 0.4.1(hono@4.6.7)(zod@3.23.8)
       '@prisma/client':
-        specifier: 5.19.1
-        version: 5.19.1(prisma@5.21.1)
+        specifier: 5.21.1
+        version: 5.21.1(prisma@5.21.1)
       hono:
         specifier: 4.6.7
         version: 4.6.7
@@ -484,8 +484,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@prisma/client@5.19.1':
-    resolution: {integrity: sha512-x30GFguInsgt+4z5I4WbkZP2CGpotJMUXy+Gl/aaUjHn2o1DnLYNTA+q9XdYmAQZM8fIIkvUiA2NpgosM3fneg==}
+  '@prisma/client@5.21.1':
+    resolution: {integrity: sha512-3n+GgbAZYjaS/k0M03yQsQfR1APbr411r74foknnsGpmhNKBG49VuUkxIU6jORgvJPChoD4WC4PqoHImN1FP0w==}
     engines: {node: '>=16.13'}
     peerDependencies:
       prisma: '*'
@@ -1660,7 +1660,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@prisma/client@5.19.1(prisma@5.21.1)':
+  '@prisma/client@5.21.1(prisma@5.21.1)':
     optionalDependencies:
       prisma: 5.21.1
 
