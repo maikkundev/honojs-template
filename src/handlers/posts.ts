@@ -22,7 +22,7 @@ posts.get('/', async (c) => {
 });
 
 posts.get('/:id', async (c) => {
-  const id = parseInt(c.req.param('id'));
+  const id = Number.parseInt(c.req.param('id'));
 
   return c.json(
     await prisma.post.findUnique({
@@ -42,7 +42,7 @@ posts.post('/new', zValidator('json', schemas.createSchema), async (c) => {
 });
 
 posts.patch('/update/:id', zValidator('json', schemas.updateSchema), async (c) => {
-  const id = parseInt(c.req.param('id'));
+  const id = Number.parseInt(c.req.param('id'));
   const validated: UpdateOptions = c.req.valid('json');
 
   if (validated.details === undefined && validated.title === undefined) {
@@ -61,7 +61,7 @@ posts.patch('/update/:id', zValidator('json', schemas.updateSchema), async (c) =
 });
 
 posts.delete('delete/:id', async (c) => {
-  const id = parseInt(c.req.param('id'));
+  const id = Number.parseInt(c.req.param('id'));
 
   await prisma.post.delete({
     where: { id },
