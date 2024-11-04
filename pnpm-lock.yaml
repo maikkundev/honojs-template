@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: 1.13.3
-        version: 1.13.3(hono@4.6.7)
+        version: 1.13.3(hono@4.6.8)
       '@hono/zod-validator':
         specifier: 0.4.1
-        version: 0.4.1(hono@4.6.7)(zod@3.23.8)
+        version: 0.4.1(hono@4.6.8)(zod@3.23.8)
       '@prisma/client':
         specifier: 5.21.1
         version: 5.21.1(prisma@5.21.1)
       hono:
-        specifier: 4.6.7
-        version: 4.6.7
+        specifier: 4.6.8
+        version: 4.6.8
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -873,8 +873,8 @@ packages:
     resolution: {integrity: sha512-yeyNSjdbyVaWurlwCpcA6XNBrHTMIeDdj0/hnvX/OLJ9ekOXYbLsLinH/MucQyGvNnXhidTdNhTtJaffL2sMfw==}
     engines: {node: '>=18'}
 
-  hono@4.6.7:
-    resolution: {integrity: sha512-wX4ZbOnzfNO61hUjuQbJ7OPGs1fWXXVVJ8VTPDb2Ls/x9HjCbVTm80Je6VTHMz5n5RGDtBgV9d9ZFZxBqx56ng==}
+  hono@4.6.8:
+    resolution: {integrity: sha512-f+2Ec9JAzabT61pglDiLJcF/DjiSefZkjCn9bzm1cYLGkD5ExJ3Jnv93ax9h0bn7UPLHF81KktoyjdQfWI2n1Q==}
     engines: {node: '>=16.9.0'}
 
   human-signals@5.0.0:
@@ -1649,13 +1649,13 @@ snapshots:
   '@esbuild/win32-x64@0.23.1':
     optional: true
 
-  '@hono/node-server@1.13.3(hono@4.6.7)':
+  '@hono/node-server@1.13.3(hono@4.6.8)':
     dependencies:
-      hono: 4.6.7
+      hono: 4.6.8
 
-  '@hono/zod-validator@0.4.1(hono@4.6.7)(zod@3.23.8)':
+  '@hono/zod-validator@0.4.1(hono@4.6.8)(zod@3.23.8)':
     dependencies:
-      hono: 4.6.7
+      hono: 4.6.8
       zod: 3.23.8
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
@@ -2046,7 +2046,7 @@ snapshots:
 
   globals@15.11.0: {}
 
-  hono@4.6.7: {}
+  hono@4.6.8: {}
 
   human-signals@5.0.0: {}
 
