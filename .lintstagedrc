@@ -1,7 +1,4 @@
 {
-  "*.{css,scss,md,json}": "pnpm biome format --write ./src",
-  "*.{ts,js}x?": [
-    "pnpm biome lint --write ./src",
-    "pnpm biome format --write ./src"
-  ]
+  "*.{css,scss,md,json}": "prettier --write",
+  "*.{ts,js}x?": ["prettier --write", "eslint --fix"]
 }
