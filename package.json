@@ -2,6 +2,7 @@
   "name": "honojs-template",
   "type": "module",
   "scripts": {
+    "start": "tsx src/index.ts",
     "dev": "tsx watch src/index.ts",
     "push": "pnpm prisma db push",
     "studio": "npx prisma studio",
