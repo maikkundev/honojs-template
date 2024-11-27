@@ -4,7 +4,7 @@ import { logger } from 'hono/logger';
 import { serve } from '@hono/node-server';
 import { PrismaClient } from '@prisma/client';
 
-import posts from './handlers/posts';
+import posts from './routes/posts';
 
 const app = new Hono();
 export const prisma = new PrismaClient();
