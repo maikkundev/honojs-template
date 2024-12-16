@@ -15,7 +15,7 @@
     "@hono/zod-validator": "0.4.1",
     "@prisma/client": "6.0.0",
     "hono": "4.6.12",
-    "zod": "^3.23.8"
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
