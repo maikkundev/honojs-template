@@ -5,15 +5,15 @@ import { zValidator } from '@hono/zod-validator';
 import { prisma } from '../index';
 import * as schemas from '../validation/post.schema';
 
-interface CreateOptions {
+type CreateOptions = {
   title: string;
   details: string;
-}
+};
 
-interface UpdateOptions {
+type UpdateOptions = {
   title?: string;
   details?: string;
-}
+};
 
 const posts = new Hono();
 
